@@ -1,12 +1,11 @@
 'use strict';
-
+//part1
 var fs = require('fs');
 var path = require('path');
 var petPath = path.join(__dirname, 'pets.json');
 
-
-var node = path.basename(process.argv[0]); //what's basename
-var file = path.basename(process.argv[1]); //i don't understand the whole process.argv thing - i get that it's an array
+var node = path.basename(process.argv[0]);
+var file = path.basename(process.argv[1]);
 var cmd = process.argv[2];
 
 if (cmd === 'read') {
